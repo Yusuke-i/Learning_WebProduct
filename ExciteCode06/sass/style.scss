@@ -1,0 +1,43 @@
+@use "./base/base";
+@use "./base/reset";
+@use "./global" as *;
+
+.header {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 31px 0 0 80px;
+    @include mq("md"){
+        padding: 19px 0 0 10px;
+    }
+}
+
+.header__logo {
+    width: 149px;
+    aspect-ratio: 149 / 26;
+    @include mq("md"){
+        width: 103px;
+    }
+}
+.fv {
+    background-image: url(../images/FV-img.jpg);
+    background-size: contain;
+    aspect-ratio: 1440 / 460;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mq("md"){
+        background-image: url(../images/FV-img-sp.jpg);
+        aspect-ratio: 375 / 360;
+    }
+}
+
+.fv__title {
+    font-size: 46px;
+    font-weight: $medium;
+    color: $black;    
+    @include mq("md"){
+        font-size: 28px;
+    }
+}
