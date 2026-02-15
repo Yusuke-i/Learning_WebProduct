@@ -1,0 +1,172 @@
+@use "./base/base";
+@use "./base/reset";
+@use "./global" as *;
+
+
+//Header
+ .header {
+     position:absolute;
+     top: 0;
+     left:0;
+     padding-top: 27px;
+     width: 100%;
+     @include mq("md"){
+         padding-top: 16px;
+     }
+ }
+
+.header__nav {
+
+}
+
+.header__list {
+    display: flex;
+    justify-content: center;
+}
+
+.header__item:not(:first-child){
+    margin-left: 100px;
+    @include mq("md"){
+        margin-left: 80px;
+    }    
+}
+
+.header__link {
+    font: size 18px;
+    color: $gray;
+    @include mq("md"){
+        font-style: 16px;
+    }    
+}
+//FV
+.fv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1440 / 780;
+    background-size: contain;
+    background-image: url(../images/FV-img.jpg);
+        @include mq("md"){
+            background-image: url(../images/FV-img-sp.jpg);
+            aspect-ratio: 375 / 650;
+        }
+
+}
+
+.fv__title {
+    font-size: 64px;
+    color: $gray;
+    @include mq("md"){
+        font-size: 40px;
+    }
+}
+
+// Story(2.4)
+.story {
+    padding-top: 90px;
+    background-color: $gray;
+    @include mq("md"){
+      padding-top: 60px;
+    }
+}
+
+//.story__inner {
+//}
+
+.story__title {
+  font-size: 46px;
+  color: $black;
+  @include mq("md"){
+    font-size: 28px;
+  }
+}
+
+.story__text {
+  margin-top: 40px;
+  @include mq("md"){
+    margin-top: 30px;
+  }
+}
+
+//experience
+.experience {
+  padding: 180px 0;
+  background-color: $gray;
+    @include mq("md"){
+      padding: 80px 0;
+    }
+}
+
+.experience__inner {
+
+}
+
+.experience__title {
+
+}
+
+.experience__content {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+    @include mq("md"){
+      flex-direction: column;
+      align-items: initial;
+    }
+}
+
+.experience__img {
+  height: auto;
+  width: 52.17%;
+    @include mq("md"){
+      width: 100%;
+    }
+}
+
+.experience__text {
+  margin-left: 40px;
+    @include mq("md"){
+      margin-left: 0;
+      margin-top: 20px;
+    }
+}
+// Footer
+.footer {
+  padding-bottom: 40px;
+  background-color:$gray;
+  @include mq("md"){
+    padding-bottom: 20px;
+  }
+}
+
+.footer__copyright {
+  font-size: 14px;
+  color: $black;
+  display: block;
+  text-align: center;
+  @include mq("md"){
+    font-size: 12px;
+  }
+}
+
+.inner {
+  max-width: 980px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-inline: auto ;
+}
+
+.title {
+  font-size: 46px;
+  color: $black;
+  @include mq("md"){
+    font-size: 28px;
+  }
+}
+.text {
+  font-size: 16px;
+  line-height: 2.25;
+  @include mq("md"){
+    font-size: 14px;
+  }
+}

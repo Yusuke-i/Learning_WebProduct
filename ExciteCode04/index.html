@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta name="robots" content="noindex,nofollow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- OGPなど -->
+  <title>ExciteCode5 | 深みのある風味と透明感のある味わいの日本酒をお届けします</title>
+  <meta name="description" content="ExciteCode5は、最高品質の日本酒を一貫して製造しています。厳選された米と清らかな水を使用し、伝統的な酒造りの技術で深みのある風味と透明感のある味わいを実現しています。日本酒の美を心を込めてお届けします。">
+  <meta property="og:title" content="ExciteCode5 | 深みのある風味と透明感のある味わいの日本酒をお届けします">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://hogehoge.com/">
+  <meta property="og:image" content="http://hogehoge.com/images/ogp-img.jpg">
+  <meta property="og:site_name" content="ExciteCode5">
+  <meta property="og:description" content="ExciteCode5は、最高品質の日本酒を一貫して製造しています。厳選された米と清らかな水を使用し、伝統的な酒造りの技術で深みのある風味と透明感のある味わいを実現しています。日本酒の美を心を込めてお届けします。">
+  <meta name="twitter:card" content="summary">
+
+  <!-- ファビコン -->
+  <link rel="icon" href="./images/favicon.ico">
+  <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" sizes="180x180">
+
+<!-- ファーストビューの背景画像は先行して読み込む(2.3) -->
+  <link rel="preload" as="image" href="./images/fv-img.jpg">
+  <link rel="preload" as="image" href="./images/fv-img-sp.jpg">
+
+<!-- Google フォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <main>
+    <!-- FV -->
+     <div class="fv">
+      <picture class="fv__img">
+        <source srcset="./images/fv-img.jpg" media="(max-width:768px)">
+        <img src="./images/fv-img.jpg" alt="机に置いたある徳利と日本酒が入っている3つのお猪口">
+      </picture>
+     </div>
+
+
+    <!-- Sidebar & Main Content(4.3) --> 
+     <div class="main-container">
+      <div class="main-container__inner">
+        <!-- Side Bar -->
+        <div class="main-container__menu">
+          <div class="menu">
+            <h1 class="menu__logo">
+              <img src="./images/logo.svg" alt="ExciteCode5" loading="lazy">
+            </h1>
+            <nav class="menu__nav">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#news" class="menu__link">お知らせ</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#standard" class="menu__link">定番セット</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#recommend" class="menu__link">おすすめ</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+        </div>
+        <!-- Main Contents-->
+        <div class="main-container__contents">
+          <!-- お知らせ-->
+          <section id="news" class="news">
+            <h2 class="news__title title">お知らせ</h2>
+            <ul class="news__list">
+              <li class="news__item">
+                <time datetime="2023-04-13" class="news__date">2023.04.13</time>
+                <a href="#" class="news__text text">日本酒アワード2022年で金賞を受賞しました</a>
+              </li>
+              <li class="news__item">
+                <time datetime="2023-03-30" class="news__date">2023.03.30</time>
+                <a href="#" class="news__text text">鳴子温泉みやぎの湯宿でのご提供を開始しました</a>
+              </li>
+              <li class="news__item">
+                <time datetime="2023-03-22" class="news__date">2023.03.22</time>
+                <a href="#" class="news__text text">SAKE FES in Miyagiに参加します</a>
+              </li>
+            </ul>
+          </section>
+           <!-- 定番セット -->
+          <section id="standard" class="standard">
+            <h2 class="standard__title title">定番セット</h2>
+              <ul class="standard__list">
+                <li class="standard__item text">金賞受賞の純米吟醸「すずめの涙」1.8Lを含む辛口日本酒3本セット</li>
+                <li class="standard__item text">日本酒が苦手な方へもおすすめ！贈り物に喜ばれる日本酒3本セット</li>
+                <li class="standard__item text">蔵元が厳選！日本酒飲み比べ720mlボトル6本セット</li>
+              </ul>
+          </section>
+
+           <!-- おすすめ -->
+          <section id="recommend" class="recommend">
+            <h2 class="recommend__title title">おすすめ</h2>
+            <ul class="recommend__list">
+              <li class="recommend__item">
+                <img src="./images/recommend-img1.jpg" alt="純米吟醸 すずめの涙"  class="recommend__img">
+                <p class="recommend__text text">金賞受賞<br>
+                  純米吟醸 すずめの涙</p> 
+              </li>
+              <li class="recommend__item">
+                <img src="./images/recommend-img2.jpg" alt="純米吟醸 さくら"  class="recommend__img">
+                <p class="recommend__text text">蔵元一押し<br>
+                  純米吟醸 さくら</p> 
+              </li>
+            </ul>
+          </section>
+
+        </div> 
+      </div>
+     </div>
+
+  </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <small class="footer__copyright">&copy; 2023 ︎ExciteCode inc.</small>
+  </footer>
+
+</body>
+
+</html>
